@@ -2,59 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProblemSet {
-	/*
-	 * Q0
-	 * Given an input array, shiftArray method shift the arr elements to the right by n unit
-	 * For example: shiftArray({1, 2, 3, 4, 5}, 2) returns {4, 5, 1, 2, 3}
-	 * It is guaranteed that arr.length >= 0 and n <= arr.length 
-	 * 
-	 * Task: Based on the D.R.Y. principle, 
-	 * improve this method to reduce the amount of repeated code 
-	 * hint: move the repeated part into a helper method
-	 */
-	public static void shiftArray(int[] arr, int n) {
-		
-		// validate input
-		if (arr.length <= 1 || arr.length == n) {
-			return;
-		}
-		
-		int len = arr.length;
-		
-		// reverse the entire input array
-		int left = 0;
-		int right = len - 1;
-		while (left < right) {
-			int temp = arr[left];
-			arr[left] = arr[right];
-			arr[right] = temp;
-			left ++;
-			right --;
-		}
-		
-		// reverse the input array from 0 to n - 1
-		left = 0;
-		right = n - 1;
-		while (left < right) {
-			int temp = arr[left];
-			arr[left] = arr[right];
-			arr[right] = temp;
-			left ++;
-			right --;
-		}
-		
-		// reverse the input array from n to arr.length - 1
-		left = n;
-		right = len - 1;
-		while (left < right) {
-			int temp = arr[left];
-			arr[left] = arr[right];
-			arr[right] = temp;
-			left ++;
-			right --;
-		}
-	}
-	
+
 	/**
 	 * Q1
 	 * Implement a function that return the factorial of n. You MUST use recursion.
@@ -125,6 +73,60 @@ public class ProblemSet {
 	public static List<List<Integer>> permutation(List<Integer> list) {
 		// TODO: implement this method
 		return null;
+	}
+	
+	
+	/*
+	 * Q6
+	 * Given an input array, shiftArray method shift the arr elements to the right by n unit
+	 * For example: shiftArray({1, 2, 3, 4, 5}, 2) returns {4, 5, 1, 2, 3}
+	 * It is guaranteed that arr.length >= 0 and n <= arr.length 
+	 * 
+	 * Task: Based on the D.R.Y. principle, 
+	 * improve this method to reduce the amount of repeated code 
+	 * hint: move the repeated part into a helper method
+	 */
+	public static void shiftArray(int[] arr, int n) {
+		
+		// validate input
+		if (arr.length <= 1 || arr.length == n) {
+			return;
+		}
+		
+		int len = arr.length;
+		
+		// reverse the entire input array
+		int left = 0;
+		int right = len - 1;
+		while (left < right) {
+			int temp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = temp;
+			left ++;
+			right --;
+		}
+		
+		// reverse the input array from 0 to n - 1
+		left = 0;
+		right = n - 1;
+		while (left < right) {
+			int temp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = temp;
+			left ++;
+			right --;
+		}
+		
+		// reverse the input array from n to arr.length - 1
+		left = n;
+		right = len - 1;
+		while (left < right) {
+			int temp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = temp;
+			left ++;
+			right --;
+		}
 	}
 	
 }
