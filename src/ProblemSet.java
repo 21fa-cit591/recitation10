@@ -47,7 +47,9 @@ public class ProblemSet {
 	}
 
 	/**
-	 * Q4 Challenge, Optional Implement a method that counts the number of 1-bit in
+	 * Q4 Challenge, Optional 
+	 * 
+	 * Implement a method that counts the number of 1-bit in
 	 * java int value. You MUST use recursion. Given that the "int" data type in
 	 * java is a 32-bit signed two's complement integer 
 	 * 
@@ -63,7 +65,9 @@ public class ProblemSet {
 	}
 
 	/**
-	 * Q5 Challenge, Optional Implement a method that, given a list of distinct
+	 * Q5 Challenge, Optional 
+	 * 
+	 * Implement a method that, given a list of distinct
 	 * integers, returns lists of all possible permutations. You MUST use recursion.
 	 * 
 	 * For example, countNumberOfOneBit({1, 2}) returns {{1, 2}, {2, 1}} Assume the
