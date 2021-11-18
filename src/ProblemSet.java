@@ -26,11 +26,9 @@ public class ProblemSet {
 	 * For example, printNumPattern(12, 3) will output "12 9 6 3 0 3 6 9 12" to the console
 	 * 
 	 * @param input
-	 * @return
 	 */
-	public static int printNumPattern(int num1, int num2) {
+	public static void printNumPattern(int num1, int num2) {
 		// TODO: implement this method
-		return 0;
 	}
 
 	/**

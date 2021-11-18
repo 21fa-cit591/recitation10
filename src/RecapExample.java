@@ -11,7 +11,18 @@ public class RecapExample {
 	public static void printReverseString(String input) {
 		// TODO: implement this method
 		// What would be the normal way to print reverse?
+//		for (int i = input.length() - 1; i >= 0; i --) {
+//			System.out.print(input.charAt(i));
+//		}
 		// How can we infer BC and sub-problem from the normal way?
+		
+		if (input.length() <= 1) {
+			System.out.println(input);
+			return;
+		}
+		System.out.print(input.charAt(input.length()-1));
+		printReverseString(input.substring(0, input.length()-1));
+		
 	}
 
 	/**
@@ -25,7 +36,24 @@ public class RecapExample {
 	 */
 	public static int countDigit(int n) {
 		// TODO: implement this method
-		return 0;
+		
+//		int count = 0;
+//		while (n != 0) {
+//			count ++;
+//			n /= 10;
+//		}
+		
+		if (n == 0) {
+			return 0;
+		}
+		
+		
+		
+		return 1 + countDigit(n/10);
 	}
 
+	public static void main (String[] args) {
+		printReverseString("abc");
+		System.out.println(countDigit(115));
+	}
 }
