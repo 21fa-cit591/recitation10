@@ -21,8 +21,9 @@ public class ProblemSet {
 	 * Q2 Given a positive integer as input, subtract another positive integer
 	 * continually until 0 or a negative value is reached, and then continually add
 	 * the second integer until the first integer is again reached. For this
-	 * question, do not end output with a newline. For example, printNumPattern(12,
-	 * 3) will output "12 9 6 3 0 3 6 9 12" to the console
+	 * question, do not end output with a newline. 
+	 * 
+	 * For example, printNumPattern(12, 3) will output "12 9 6 3 0 3 6 9 12" to the console
 	 * 
 	 * @param input
 	 * @return
@@ -48,8 +49,9 @@ public class ProblemSet {
 	/**
 	 * Q4 Challenge, Optional Implement a method that counts the number of 1-bit in
 	 * java int value. You MUST use recursion. Given that the "int" data type in
-	 * java is a 32-bit signed two's complement integer For example,
-	 * countNumberOfOneBit(5) returns 2, because the last 4 bits of the 2C
+	 * java is a 32-bit signed two's complement integer 
+	 * 
+	 * For example, countNumberOfOneBit(5) returns 2, because the last 4 bits of the 2C
 	 * representation of 5 is "0101" Assume the input n >= 0
 	 * 
 	 * @param n
@@ -63,6 +65,7 @@ public class ProblemSet {
 	/**
 	 * Q5 Challenge, Optional Implement a method that, given a list of distinct
 	 * integers, returns lists of all possible permutations. You MUST use recursion.
+	 * 
 	 * For example, countNumberOfOneBit({1, 2}) returns {{1, 2}, {2, 1}} Assume the
 	 * length(input) >= 1 Hint, you might want to write a recursive helper method
 	 * 
