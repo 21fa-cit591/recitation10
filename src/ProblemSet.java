@@ -6,7 +6,7 @@ public class ProblemSet {
 	/**
 	 * Q1 Implement a function that return the factorial of n. You MUST use
 	 * recursion. For example, factorial(3) should yield 6 because factorial(3) = 3
-	 * * 2 * 1 Assume 100 >= n >= 1
+	 * * 2 * 1 Assume 20 >= n >= 1
 	 * 
 	 * @param n
 	 * @return
